@@ -1,3 +1,5 @@
+alert ('Recomendado utilizar o Google Chrome');
+
 function verificaChuteValido() {
     const numero = +chute;
 
