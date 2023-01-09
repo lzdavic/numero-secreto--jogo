@@ -2,7 +2,7 @@
 
 :root {
     --font-family: 'Montserrat', sans-serif;
-    --bg-color: #0AA1DD;
+    --bg-color: #058269;
     --primary-color: #E8F9FD;
 }
 
@@ -45,3 +45,19 @@ h3 {
     margin: 20px;
 }
 
+.btn-jogar {
+    padding: 0.5em 1em;
+    border: none;
+    background-color: var(--primary-color);
+    border-radius: 0.5em;
+    margin-top: 1em;
+    display: block;
+    margin: 3em auto;
+    transition: 300ms;
+    font-weight: 700;
+}
+
+.btn-jogar:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
