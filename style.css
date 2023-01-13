@@ -45,7 +45,9 @@ h3 {
     margin: 20px;
 }
 
-.btn-jogar {
+.alterar__intervalo,
+.btn-jogar,
+.button-ok {
     padding: 0.5em 1em;
     border: none;
     background-color: var(--primary-color);
@@ -57,7 +59,31 @@ h3 {
     font-weight: 700;
 }
 
-.btn-jogar:hover {
+.alterar__intervalo:hover,
+.btn-jogar:hover,
+.button-ok:hover {
     transform: scale(1.05);
     cursor: pointer;
+}
+
+.alterar__intervalo {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.alterar__intervalo:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+input {
+    width: 4em;
+    border: none;
+}
+
+[data-display="hidden"] {
+    display: none;
+}
+[data-display="show"] {
+    display: block;
 }
