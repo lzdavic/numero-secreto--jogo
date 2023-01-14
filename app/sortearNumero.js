@@ -1,18 +1,25 @@
-function getMenorValor() {
-    var menorValorMemory = sessionStorage.menor
+const menorInicial = 1
+const maiorInicial = 1000
+var menorValor = getMenorValor();
+var maiorValor = getMaiorValor();
+const numeroSecreto = gerarNumeroAleatorio();
 
-    if (sessionStorage.menor == "undefined") {
-        menorValor === 1;
-        return
+
+function getMenorValor() {
+    if (sessionStorage.menor != "undefined") {
+        return parseInt(sessionStorage.menor);
     } else {
-        menorValor = menorValorMemory + 1 - 0
+        return parseInt(menorInicial)
     }
-    return
 }
 
-var menorValor = parseInt(getMenorValor());
-var maiorValor = 1000
-const numeroSecreto = gerarNumeroAleatorio();
+function getMaiorValor() {
+    if (sessionStorage.maior != "undefined") {
+        return parseInt(sessionStorage.maior);
+    } else {
+        return maiorInicial
+    }
+}
 
 function gerarNumeroAleatorio() {
     return parseInt(Math.random() * (maiorValor + 1));
@@ -66,6 +73,8 @@ botaoAlterar.addEventListener('click', e => {
             sessionStorage.setItem("menor", inputMenor)
             sessionStorage.setItem("maior", inputMaior)
         }
+
+        window.location.reload();
 }
 
 
