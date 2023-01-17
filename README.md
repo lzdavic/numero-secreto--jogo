@@ -3,7 +3,7 @@
 
 <h1 align="center" >Mini-game feito em JavaScript</h1>
 
-### [Link para o Jogo](https://numero-secreto-jogo-lzdavic.vercel.app)
+### [Link para o Jogo](https://numero-secreto-jogo-lzdavic.vercel.app) - Recomendado utilizar Google Chrome
 
 ### ❓ Como Jogar:
 - Ao início de cada rodada, um numero [pseudo-aleatório](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/random) é gerado entre o intervalo especificado. Utilize o seu microfone para realizar um **chute**, cada chute é comparado com o número gerado, e retorna se é maior ou menor.
